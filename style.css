@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd6e0, #cdeffd);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.input-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  outline: none;
+}
+
+.input-box button {
+  width: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #ff8fab;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-box button:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f7f7f7;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: pop 0.2s ease;
+}
+
+li.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li button {
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+@keyframes pop {
+  from { transform: scale(0.9); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
